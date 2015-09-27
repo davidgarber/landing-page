@@ -38,6 +38,19 @@
       font-size: 300%;
     }
 
+    .center {
+      text-align: center;
+    }
+
+    .title {
+      margin-top: 100px;
+      font-size: 300%;
+    }
+
+    #footer {
+      background-color: blue;
+    }
+
     </style>
   </head>
   <body>
@@ -61,7 +74,7 @@
       </div>
 
     </div>
-    <div class="container" id="topContainer">
+    <div class="container contentContainer" id="topContainer">
       <div class="row">
         <div class="col-md-6 col-md-offset-3" id="topRow">
           <h1>My Awesome App</h1>
@@ -72,8 +85,44 @@
 
     </div>
 
+    <div class="container contentContainer">
+      <div class="row" class="center">
+        <h1 class="center title">Why This App Is Awesome</h1>
+        <p class="lead center">This is why you should download this fantastic app.</p>
+
+      </div>
+      <div class="row">
+        <div class="col-md-4 marginTop">
+          <h2><span class="glyphicon glyphicon-music">Header</span></h2>
+          <p>A brief description of one of the best features of your app. Maybe a
+          little bit more text. A brief description of one of the best features of your app. Maybe a
+          little bit more text. </p>
+          <button class="btn btn-success" marginTop>Sign Up!</button>
+        </div>
+        <div class="col-md-4 marginTop" >
+          <h2><span class="glyphicon glyphicon-off">Header</span></h2>
+          <p>A brief description of one of the best features of your app. Maybe a
+          little bit more text. A brief description of one of the best features of your app. Maybe a
+          little bit more text. </p>
+          <button class="btn btn-success" marginTop>Sign Up!</button>
+        </div>
+        <div class="col-md-4 marginTop">
+          <h2><span class="glyphicon glyphicon-pencil">Header</span></h2>
+          <p>A brief description of one of the best features of your app. Maybe a
+          little bit more text. A brief description of one of the best features of your app. Maybe a
+          little bit more text. </p>
+          <button class="btn btn-success" marginTop>Sign Up!</button>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="container contentContainer" id="footer">
+
+    </div>
+
     <script>
-    $("#topContainer").css("height",$(window).height());
+    $(".contentContainer").css("height",$(window).height());
 
     </script>
 
